@@ -17,7 +17,7 @@ namespace WeatherTest.BLL.Models
             {
                 var date = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
                 date = date.AddSeconds(Dt).ToLocalTime();
-                return $"{date:O}";
+                return $"{date:O}"; //ISO 8601
             }
         }
 
